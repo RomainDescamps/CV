@@ -82,19 +82,69 @@
               </div>
               <p class="work-experience-date">Depuis Avril 2022</p>
             </div>
-            <div class="work-experience-description">Description</div>
+            <div class="experience-title-container">
+                Rendez-vous – Responsable d’application<br><br>
+            </div>
+            <div class="work-experience-description">
+                le but de cette aplication est de prendre des rendez-vous pour des entrées et sorties de conteneur sur le terminal.
+Cependant l’application ne se limite pas a cette fonctionalité, nous avons aussi une gestion des gates (porte d’entré/sortie de conteneur), des voies de circulation, des lieux et du planning pour le terminal en question.<br>
+Technologies utilisées :
+                <ul class="work-experience-tasks-list">
+                    <li>VueJS</li>
+                    <li>Java 8</li>
+                    <li>Javascript</li>
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li>IBM DB2 iseries AS400</li>
+                    <li>Git</li>
+                    <li>Jenkins</li>
+                    <li>Jira</li>
+                </ul>
+            </div>
+            <div class="experience-title-container">
+                <br>Yard Management – Responsable d’application<br><br>
+            </div>
+            <div class="work-experience-description">
+Le Yard est une application de visualisation du parc d'un terminal qui regroupe plusieurs fonctionnalités, comme la gestion des secteurs sur le parc, 
+la gestion des réservations d’un endroit sur le parc pour un type de conteneur ou un type d’escale, cette solution permet également
+la gestion de nos engins (RTG, Cavalier, Stacker) sur parc, de suivre leurs cadence, la gestion des missions, créer des missions unitaire (changement d’allotissement d’un conteneur). 
+<br>Technologies utilisées :
+                <ul class="work-experience-tasks-list">
+                    <li>Java 8</li>
+                    <li>Javascript</li>
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li>IBM DB2 iseries AS400</li>
+                </ul>
+            </div>
           </div>
 
           <div class="work-experience-block">
             <div class="work-experience-header-container">
               <div class="work-experience-title-container">
-                <h2 class="work-company-title">Acssi Boulanger</h2>
+                <h2 class="work-company-title">Acssi</h2>
                 <span class="work-experience-divider"></span>
-                <h2 class="work-experience-subtitle">Ingénieur d'études et développement chez Boulanger</h2>
+                <h2 class="work-experience-subtitle">Ingénieur d'études et développement</h2>
               </div>
               <p class="work-experience-date">Juillet 2020 - Mars 2022</p>
             </div>
-            <div class="work-experience-description">Misson chez Boulanger : Analyse, développement et conception d'une application servant à gérer l'activité du groupe B'DOM et SOLVAREA. L'activité se présente sous forme de la gestion des clients, des intervenants, des prestations, des commandes, de la facturation et de la planification des rendez-vous à travers un outil externe : Opti-Time. L'application repose sur une architecture en micro-services avec les technologies suivantes : Angular, JAVA 8, Maven, Spring, Mybatis, PostgreSql, Sonar, TU Mockito/PowerMockito, Gitlab. Projet en méthode Agile</div>
+            <div class="work-experience-description">Misson chez Boulanger : Analyse, développement et conception d'une application servant à gérer l'activité du groupe 
+                B'DOM et SOLVAREA. L'activité se présente sous forme de la gestion des clients, des intervenants, des prestations, des commandes, de la facturation 
+                et de la planification des rendez-vous à travers un outil externe : Opti-Time. L'application repose sur une architecture en micro-services avec les 
+                technologies suivantes :
+                <ul class="work-experience-tasks-list">
+                    <li>Angular</li>
+                    <li>Java 8</li>
+                    <li>Maven</li>
+                    <li>Spring</li>
+                    <li>Mybatis</li>
+                    <li>PostgreSql</li>
+                    <li>Sonar</li>
+                    <li>TU Mockito/PowerMockito</li>
+                    <li>Gitlab</li>
+                    <li>Projet en méthode Agile</li>
+                </ul>
+                </div>
           </div>
 
           <div class="work-experience-block">
@@ -107,7 +157,25 @@
               <p class="work-experience-date">Juin 2019 - Juillet 2020</p>
             </div>
             <div class="work-experience-description">
-              Description
+              Évolutions sur l’application de gestion des ressources internes de la société
+                <ul class="work-experience-tasks-list">
+                    <li>Travail en équipe de 8 alternants</li>
+                    <li>Contacts réguliers avec les utilisateurs</li>
+                    <li>Participation aux phases d’analyse</li>
+                    <li>Développement de nouvelles fonctionnalités</li>
+                    <li>Couverture de code (tests unitaires et d’intégration)</li>
+                    <li>Participation à la phase de recette.</li>
+                    <li>Participation à la phase de recette.</li>
+                    <li>TU Mockito/PowerMockito</li>
+                    <li>Gitlab</li>
+                    <li>Projet en méthode Agile</li>
+                </ul>
+                Déploiements d’un service d’impression Jasper
+                <ul class="work-experience-tasks-list">
+                    <li>Création du projet</li>
+                    <li>Intégration et déploiement continus via Docker et Jenkins</li>
+                    <li>Mise en place d’un Repository privé Nexus</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -226,6 +294,7 @@ $light-blue: #0077b5;
 
     @media screen and (max-width: 768px) {
       padding: 0;
+      flex-direction: column;
     }
     .side-container {
       padding: 2rem;
@@ -233,8 +302,8 @@ $light-blue: #0077b5;
       width: 390px;
       position: relative;
 
-      @media screen and (max-width: 768px) {
-        display: none;
+    @media screen and (max-width: 768px) {
+        
       }
 
       .side-info-container {
@@ -367,12 +436,10 @@ $light-blue: #0077b5;
 
         .experience-title-underline {
           width: 173px;
-          position: relative;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
+          height: 28px;
+          position: absolute;
           border-bottom: 10px solid $orange;
-          margin-top: -15px;
+          margin-top: 10px;
           opacity: 0.4;
           z-index: 2;
         }
@@ -445,6 +512,12 @@ $light-blue: #0077b5;
           }
         }
 
+        .experience-title-container {
+          font-size: 1.4rem;
+          color: black;
+          margin-top: -1rem;
+        }
+
         .work-experience-description {
           font-size: 1.2rem;
           color: $light-grey;
@@ -474,12 +547,10 @@ $light-blue: #0077b5;
 
         .projects-link-title-underline {
           width: 110px;
-          position: relative;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
+          height: 28px;
+          position: absolute;
           border-bottom: 10px solid $orange;
-          margin-top: -15px;
+          margin-top: 10px;
           opacity: 0.4;
           z-index: 2;
         }
