@@ -18,6 +18,7 @@ import Resume from "../components/Resume.vue";
 
   @media screen and (max-width: 768px) {
    padding: 0rem;
+   padding-bottom: 7rem;
  }
 }
 </style>
