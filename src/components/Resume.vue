@@ -227,7 +227,7 @@ $black: #000;
 $white: #fff;
 $light-grey: #808288;
 $dark-grey: #474747;
-$slate: #cbd5e134;
+$slate: #eaedf0;
 $light-blue: #0077b5;
 
 /* Download btn transition */
